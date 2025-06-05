@@ -12,6 +12,13 @@ public class Uomo extends Persona {
 		super(codiceFiscale, nome, cognome, nascita, luogo);
 		this.abbonamentoStadio = abbonamentoStadio;
 	}
+	
+	public boolean isAbbonamentoStadio() {
+		return abbonamentoStadio;
+	}
+	public void setAbbonamentoStadio(boolean abbonamentoStadio) {
+		this.abbonamentoStadio = abbonamentoStadio;
+	}
 	@Override
 	public String toString() {
 		return "Uomo [" + super.toString() + " abbonamentoStadio=" + abbonamentoStadio + "]";

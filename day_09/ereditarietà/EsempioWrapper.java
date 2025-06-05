@@ -9,8 +9,15 @@ public class EsempioWrapper {
 		Number[] numeri = {d, i};
 		int somma = 0;
 		for(Number n : numeri) {
-			if(n isInstance(Double))
+			if(n instanceof Double) {
+				System.out.println("E'una double " + n);
+			} else if (n instanceof Integer) {
+				System.out.println("E' una integer " + n);
+				double x = (Integer) n;
+			}
+			somma += n.doubleValue();
 		}
+		System.out.println(somma);
 
 	}
 
